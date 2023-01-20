@@ -1,0 +1,327 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1C316BA-4F05-3F9F-B50D-5B1DBCDD1727" name="character">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:23:25 UTC</createdTime>
+<comment>komentarz</comment>
+<commentInRDBMS>komentarz</commentInRDBMS>
+<ownerDesignName>tybja</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="79023F70-4784-B281-E6FA-94723B575096">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:24:38 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nickname" id="4A02DE99-6048-87FD-4087-89E965D3E46A">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:24:38 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="1DB17B51-1D28-C278-4098-0D7DC330EAA3">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:24:38 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3C529E0-3B99-F022-FEF5-2EA6E41A2AC3" referredColumn="C3CE363D-ADC0-7AB3-E807-61DEE77F1EA0"/>
+</associations>
+</Column>
+<Column name="gold_amount" id="1FA9D518-B74D-61AA-D837-F1E48CAD5F0B">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:53:35 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="actual_hp" id="CCF4305B-6A50-5FF3-4E3C-8D04F38FB0A5">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-06-13 12:34:56 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stamina" id="B080D8FD-091C-102D-E377-51E93CB2E088">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:54:33 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>42.00</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="level" id="4C08E624-5A1E-00F2-468B-AEABC6EC0900">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proffesion_id" id="AA46561B-B7D0-063E-85C0-E365756AE59A">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:46:10 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eq_helmet" id="08C4C9AD-7B2A-C943-BF70-652AE611D3CE">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eq_armor" id="719868B0-D6C9-2668-66D9-56E71F7C82D4">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eq_legs" id="D984D48E-EA5E-AA65-E83C-FE292C978974">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eq_boots" id="141534F2-CAB4-B596-0520-CA78177262AE">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eq_amulet" id="0D9B3370-4EDC-14E4-80D7-9A2642323D34">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eq_ring" id="2CB0746C-AC35-6ED3-2EB0-4CCAF89A04CB">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eq_weapon" id="DAFED458-DFFF-B522-FE40-D406BF619BCB">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eq_shield" id="9EF4C337-4A5D-1D5E-FD3B-15D2F1E21EC4">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eq_ammunition" id="8E3F9AE5-B040-B2A7-7587-0EE276409153">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eq_bag" id="5D0B6B4D-B9B2-2F19-1ED4-30CAE2B1449E">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ab_magical_level" id="98710EB8-CEAB-E665-3835-07B9749CA4ED">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:29:39 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ab_swordsmanship" id="4513C2F4-003B-ECF2-0A33-BA28CF597D86">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:30:22 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ab_shielding" id="F7BA239E-C489-FF10-FE79-D0057B50A3ED">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:30:41 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pot_mana" id="BB83E280-E803-4399-9465-88A8FE899B2B">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-06-13 12:34:19 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pot_hp" id="E2CD579B-DA2B-6EA0-5D8B-CAA4846FC741">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-06-13 12:34:43 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rune" id="158EF910-2F13-447B-F436-7F2CA51115C7">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-06-13 12:36:11 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B973F317-2BE7-D372-E828-F697945DBC16" name="character_PK">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:24:38 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79023F70-4784-B281-E6FA-94723B575096"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8550B12-4895-F0CB-6D60-A33B32C2B1E7" name="character_user_UN">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:36:18 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DB17B51-1D28-C278-4098-0D7DC330EAA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86B29561-463F-9BD2-BCC9-459962A35428" name="character_nickname_UN">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:36:18 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A02DE99-6048-87FD-4087-89E965D3E46A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFE5D9B2-9F74-403F-8C9D-BA7F4987612E" name="character_konto_FK">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:34:27 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DB17B51-1D28-C278-4098-0D7DC330EAA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

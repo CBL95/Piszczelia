@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DatamodelerPersistedDDLSelection designName="tybja" objectID="B8381503-E836-C00D-DAAB-7A52756CB95F">
+   <IncludeComments isSelected="false"/>
+   <applyNameSubstitution isSelected="false"/>
+   <generateDDLInFiles isSelected="false"/>
+   <generateRESTServices isSelected="false"/>
+   <activeScriptSetCBIndex selectedIndex="1"/>
+   <oracle.dbtools.crest.model.design.relational.RelationalDesign objectID="FBBBAA99-ED28-979C-9EAC-B5A9E9983B23">
+      <object objectID="A1C316BA-4F05-3F9F-B50D-5B1DBCDD1727" markedGenerate="true"/>
+      <object objectID="D14DFF9D-5456-C11C-82FA-BF59125A71C7" markedGenerate="true"/>
+      <object objectID="BB87CB91-65E1-4ADE-86D0-611C3B8DD027" markedGenerate="true"/>
+      <object objectID="7935AB9E-3B4A-135A-376B-C9E7F66F396E" markedGenerate="true"/>
+      <object objectID="5ED861AB-40FE-BD89-C42D-EE74007CBC52" markedGenerate="true"/>
+      <object objectID="ECC9D024-47F9-0F3F-C625-7CD92C79BDF4" markedGenerate="true"/>
+      <object objectID="04E6EB11-ED98-C826-7F06-4D8EA00F8DA2" markedGenerate="true"/>
+      <object objectID="0B986AF6-9BF5-3B3B-8292-2B13D9A1BD79" markedGenerate="true"/>
+      <object objectID="BCD5A586-1DF5-9877-C695-AF6E4009F286" markedGenerate="true"/>
+      <object objectID="86B29561-463F-9BD2-BCC9-459962A35428" markedGenerate="true"/>
+      <object objectID="B8550B12-4895-F0CB-6D60-A33B32C2B1E7" markedGenerate="true"/>
+      <object objectID="FA550FD9-F2D2-6777-C792-AAA8E6CF4B64" markedGenerate="true"/>
+      <object objectID="10923F74-7E40-E75E-F83E-A1DBC13B8A01" markedGenerate="true"/>
+      <object objectID="52801C71-07A6-ED60-C657-7BC48C3A6F51" markedGenerate="true"/>
+      <object objectID="B973F317-2BE7-D372-E828-F697945DBC16" markedGenerate="true"/>
+      <object objectID="7BA24327-52E8-A6D0-3E0B-D9EC9FF3C376" markedGenerate="true"/>
+      <object objectID="600104B4-FD47-A685-FD1A-7A66A943146B" markedGenerate="true"/>
+      <object objectID="D4AB5C72-C237-6C86-EC4E-672F3C685467" markedGenerate="true"/>
+      <object objectID="DF8EB09D-E4A9-4810-F348-CED8D51DAC73" markedGenerate="true"/>
+      <object objectID="E7E7AEE4-79BE-1180-7086-26725C1D9255" markedGenerate="true"/>
+      <object objectID="E8403DD7-F824-9A4E-D090-FB771CB7B540" markedGenerate="true"/>
+      <object objectID="AFE5D9B2-9F74-403F-8C9D-BA7F4987612E" markedGenerate="true"/>
+      <object objectID="51A74D06-3FFE-A147-4D0A-ED476A4DACA7" markedGenerate="true"/>
+      <object objectID="3F77256D-1871-E37E-0A1E-E79A27A16008" markedGenerate="true"/>
+      <object objectID="613D1CA3-4BA8-2D74-CCE3-735FF9D91498" markedGenerate="true"/>
+      <object objectID="B52E7DEA-A468-E976-7FEE-24D06B1DE227" markedGenerate="true"/>
+      <object objectID="20DC52AE-AB44-5F0B-05AE-00E29860B6AB" markedGenerate="true"/>
+      <object objectID="C36E8486-F6CB-A3BB-E490-FC198EF19DB2" markedGenerate="true"/>
+      <object objectID="68C4C163-7FC9-5821-81D9-FBACFCDF2B7D" markedGenerate="true"/>
+      <object objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" markedGenerate="true"/>
+      <object objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" markedGenerate="true"/>
+   </oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <includeTableScripts/>
+   <namesSubstitution/>
+   <objectTypes>
+      <objectType isSelected="false" type="Index"/>
+      <objectType isSelected="false" type="Role"/>
+      <objectType isSelected="false" type="Table"/>
+      <objectType isSelected="false" type="Tablespace"/>
+      <objectType isSelected="false" type="User"/>
+   </objectTypes>
+   <OSDDM_DDLPP>
+      <db2_term_char db2_term_char=" "/>
+      <type_subst_triggers isSelected="true"/>
+      <fkarct_triggers isSelected="true"/>
+      <fk_none_transferable_triggers isSelected="true"/>
+      <show_char_byte_in_ddl isSelected="true"/>
+      <extended_size_for_chars isSelected="false"/>
+      <not_null_short_form_generation isSelected="false"/>
+      <use_quoted_identifiers isSelected="false"/>
+      <create_domains_during_import isSelected="true"/>
+      <generate_comments_in_rdbms isSelected="true"/>
+      <generate_inline_column_cc isSelected="false"/>
+      <generate_valid_value_cc isSelected="true"/>
+      <include_default_settings_in_ddl isSelected="false"/>
+      <include_logging_in_ddl isSelected="true"/>
+      <include_schema_in_ddl isSelected="true"/>
+      <include_storage_in_ddl isSelected="true"/>
+      <include_tablespace_in_ddl isSelected="true"/>
+      <automatic_pk_generation isSelected="false"/>
+      <automatic_uk_generation isSelected="false"/>
+      <automatic_fk_generation isSelected="false"/>
+      <include_pctfree_in_ddl isSelected="true"/>
+      <include_pctused_in_ddl isSelected="true"/>
+      <include_initrans_in_ddl isSelected="true"/>
+      <include_initialextent_in_ddl isSelected="true"/>
+      <include_nextextent_in_ddl isSelected="true"/>
+      <include_minextents_in_ddl isSelected="true"/>
+      <include_maxextents_in_ddl isSelected="true"/>
+      <include_pctincrease_in_ddl isSelected="true"/>
+      <include_bufferpool_in_ddl isSelected="true"/>
+      <include_freelists_in_ddl isSelected="true"/>
+      <include_freelistgroups_in_ddl isSelected="true"/>
+      <include_optimal_in_ddl isSelected="true"/>
+   </OSDDM_DDLPP>
+   <dropSelection>
+      <dropGeneratedObjectsOnly isSelected="true"/>
+      <useDropDependencies isSelected="true"/>
+      <dropableObject name="Tables" isSelected="false"/>
+      <dropableObject name="Indexes" isSelected="false"/>
+      <dropableObject name="Views" isSelected="false"/>
+      <dropableObject name="Foreign Keys" isSelected="false"/>
+   </dropSelection>
+</DatamodelerPersistedDDLSelection>

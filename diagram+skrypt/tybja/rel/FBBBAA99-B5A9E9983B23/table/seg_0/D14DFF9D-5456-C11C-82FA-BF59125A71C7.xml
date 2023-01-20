@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D14DFF9D-5456-C11C-82FA-BF59125A71C7" name="done_quests">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:52:10 UTC</createdTime>
+<comment>komentarz</comment>
+<commentInRDBMS>komentarz</commentInRDBMS>
+<ownerDesignName>tybja</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="character_id" id="0C390DBC-0A74-4659-A1A1-2949D9B84E9D">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:52:24 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CD15695-A767-9D89-7C0D-64CA9E1E789C" referredColumn="79023F70-4784-B281-E6FA-94723B575096"/>
+</associations>
+</Column>
+<Column name="quest_id" id="784055B5-AF96-26C9-8D92-99EB07FDAB0D">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:52:30 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D5397E2-A87E-7775-BE45-91256DE4505D" referredColumn="85426F46-DADA-85A2-0CEF-3D9DAC756D30"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F77256D-1871-E37E-0A1E-E79A27A16008" name="done_quests_character_FK">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:52:24 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C390DBC-0A74-4659-A1A1-2949D9B84E9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="613D1CA3-4BA8-2D74-CCE3-735FF9D91498" name="done_quests_quest_FK">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:52:30 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="784055B5-AF96-26C9-8D92-99EB07FDAB0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

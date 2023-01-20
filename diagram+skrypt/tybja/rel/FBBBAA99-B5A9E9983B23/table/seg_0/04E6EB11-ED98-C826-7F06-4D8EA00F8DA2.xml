@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="04E6EB11-ED98-C826-7F06-4D8EA00F8DA2" name="mob">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:36:41 UTC</createdTime>
+<comment>komentarz</comment>
+<commentInRDBMS>komentarz</commentInRDBMS>
+<ownerDesignName>tybja</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="72FEB520-ED05-0106-58C5-24E23DBB1469">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:36:55 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="D9D3DE4F-C60E-CBB7-E9C5-72537FA0BD7B">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:37:42 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hp" id="49B8DF54-6CED-4CE1-C796-504C83035EC1">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:37:42 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="experience" id="47E3299D-3515-1763-998D-4331F17573D2">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:38:58 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="speed" id="AC1B46CE-CF84-3F2C-A756-3A727E5D38C5">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-06-10 13:37:09 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attack_mele" id="FB571FCF-6DB8-4BB2-4DE2-B5821C20F8EC">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:38:42 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attack_distance" id="0FED783F-AC30-3F6B-3D48-B8DA0A0927C9">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:38:42 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gold" id="5AC0C76F-A35B-9B7F-BD61-6B62C26961E5">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-06-10 13:37:09 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF8EB09D-E4A9-4810-F348-CED8D51DAC73" name="mob_PK">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:36:55 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72FEB520-ED05-0106-58C5-24E23DBB1469"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

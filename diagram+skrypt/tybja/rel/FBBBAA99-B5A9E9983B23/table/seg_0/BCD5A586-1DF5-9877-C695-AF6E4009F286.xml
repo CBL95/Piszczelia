@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCD5A586-1DF5-9877-C695-AF6E4009F286" name="quest">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:51:41 UTC</createdTime>
+<comment>komentarz</comment>
+<commentInRDBMS>komentarz</commentInRDBMS>
+<ownerDesignName>tybja</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="85426F46-DADA-85A2-0CEF-3D9DAC756D30">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:52:06 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quest_title" id="FEB3CC8A-5748-70BC-7081-885DF4D782D5">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:52:06 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8403DD7-F824-9A4E-D090-FB771CB7B540" name="quest_PK">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:52:06 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85426F46-DADA-85A2-0CEF-3D9DAC756D30"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

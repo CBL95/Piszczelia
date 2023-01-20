@@ -1,0 +1,520 @@
+﻿body, html {
+    padding: 0;
+    margin: 0;
+}
+
+#kontener {
+    width: 1920px;
+    margin: 0px;
+    background-image: url('images/tlo.png');
+    height:974px;
+  
+}
+
+
+
+.kolumna {
+    float: left;
+    margin: 0px;
+    width: 296px;
+    height: 800px;
+    
+}
+
+
+
+
+#czat {
+    margin-left: 297px;
+    font-family: Tahoma;
+    font-weight:700;
+    font-size:12px;
+    color:white;
+    width: 1200px;
+    float: left;
+    height: 70px;
+    background-image: url('images/czat.png');
+    background-repeat: no-repeat;
+    padding-top: 24px;
+    padding-left: 9px;
+}
+
+
+.eq {
+    float: left;
+    margin: 0px;
+    width: 250px;
+    height: 150px;
+   
+    background-image: url('images/eq_tlo.png');
+    background-repeat:no-repeat;
+    margin-left:100px;
+}
+
+
+.napis {
+    font-family: Tahoma;
+    color: rgb(192,192,192);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.character {
+    background-image: url('images/hunter.png');
+    background-repeat: no-repeat;
+    margin: 0px;
+    width: 250px;
+    height: 150px;
+    font-family: Tahoma;
+    color: rgb(192,192,192);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.skills {
+    font-family: Tahoma;
+    color: rgb(192,192,192);
+    float: left;
+    margin: 0px;
+    width: 200px;
+    height: 352px;
+    font-weight: 700;
+    font-size: 11px;
+    background-image: url('images/skills.png');
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-left: 100px;
+    line-height: 1.7em;
+    letter-spacing: 0.5px;
+}
+
+.kontent {
+    float: left;
+    margin: 0px;
+    width: 1199px;
+    height: 879px;
+
+}
+
+
+.button {
+    margin: 2px;
+    width: 200px;
+    height: 50px;
+    font-family: Tahoma;
+    font-weight: 700;
+    font-size: 12px;
+    /*font-weight:bold;*/
+    color: rgb(192,192,192);
+    border-bottom-color: rgb(40, 40, 39);
+    border-right-color: rgb(40,40,39);
+    border-left-color: rgb(116,116,116);
+    border-top-color: rgb(116,116,116);
+    background-image: url('images/tlo.png');
+}
+
+.fit{
+    width:100%;   
+}
+
+
+
+.rzadEq1 {
+    display: inline-block;
+    display: block;
+    width:30px;
+    position:absolute;
+    margin-left:5px;
+    margin-top:17px;
+   
+}
+
+.rzadEq2 {
+    display: inline-block;
+    display: block;
+    position: absolute;
+    margin-left: 41px;
+    margin-top: 5px;
+    width:30px;
+
+}
+
+.rzadEq3 {
+    position:absolute;
+    margin-left:77px;
+    margin-top:18px;
+    width:30px;
+}
+
+.eq_image{
+    padding-top:1px;
+}
+
+
+/*###############################
+            Logowanie
+#################################*/
+
+
+
+#tlologowania {
+    width: 1920px;
+    height: 974px;
+    margin: 0px;
+    background-image: url('images/EkranLogowania.png');
+}
+
+
+.kontentlogowanie {
+    float: left;
+    margin-left: 350px;
+    width: 1220px;
+    height: 950px;
+}
+
+
+.logowanie {
+    margin-left: 470px;
+    margin-top: 400px;
+    margin-right: 470px;
+    background-image: url('images/loginSession.png');
+    background-repeat: no-repeat;
+    height: 163px;
+}
+
+.logowanieButton {
+    margin-top: 19px;
+    margin-left: 168px;
+    width: 102px;
+    height: 20px;
+    font-family: Tahoma;
+    color: rgb(192,192,192);
+    font-weight: 700;
+    font-size: 11px;
+    color: rgb(192,192,192);
+    border-width: 1px;
+    border-bottom-color: rgb(40, 40, 39);
+    border-right-color: rgb(40,40,39);
+    border-left-color: rgb(116,116,116);
+    border-top-color: rgb(116,116,116);
+    background-image: url('images/tlo.png');
+    letter-spacing: 0.5px;
+}
+
+
+
+.tibiaInput1 {
+    margin-left: 170px;
+    margin-top: 18px;
+    padding-left: 3px;
+    width: 95px;
+    font-size: 10px;
+    height: 13px;
+    font-family: Tahoma;
+    color: rgb(192,192,192);
+    font-weight: 700;
+    background-color: rgb(54,54,54);
+    border: none;
+    
+}
+
+.tibiaInput2 {
+    margin-left: 170px;
+    margin-top: 14px;
+    padding-left: 3px;
+    width: 95px;
+    font-size: 10px;
+    height: 13px;
+    font-family: Tahoma;
+    color: rgb(192,192,192);
+    font-weight: 700;
+    background-color: rgb(54,54,54);
+    border: none;
+}
+
+.tibiaInput3 {
+    margin-left: 170px;
+    margin-top: 14px;
+    margin-bottom:10px;
+    padding-left: 3px;
+    width: 95px;
+    font-size: 10px;
+    height: 13px;
+    font-family: Tahoma;
+    color: rgb(192,192,192);
+    font-weight: 700;
+    background-color: rgb(54,54,54);
+    border: none;
+}
+
+.invisibleHyperLink {
+    font-size: 11px;
+    height: 13px;
+    font-family: Tahoma;
+    color: rgb(192,192,192);
+    font-weight: 700;
+    margin-left: 16px;
+    letter-spacing:0.8px;
+    
+}
+
+/*###############################
+            Rejestracja
+#################################*/
+
+.rejestracja {
+    margin-left: 470px;
+    margin-top: 300px;
+    overflow: auto;
+    margin-right: 470px;
+    background-image: url('images/registrationSession.png');
+    background-repeat: no-repeat;
+    height: 377px;
+    font-family: Tahoma;
+    color: rgb(192,192,192);
+    font-weight: 700;
+    font-size: 10pt;
+    letter-spacing: 0.5px;
+}
+
+.rejestracjaButton {
+    margin-top: 20px;
+    margin-left: 168px;
+    width: 102px;
+    height: 20px;
+    font-family: Tahoma;
+    color: rgb(192,192,192);
+    font-weight: 700;
+    font-size: 11px;
+    color: rgb(192,192,192);
+    border-width: 1px;
+    border-bottom-color: rgb(40, 40, 39);
+    border-right-color: rgb(40,40,39);
+    border-left-color: rgb(116,116,116);
+    border-top-color: rgb(116,116,116);
+    background-image: url('images/tlo.png');
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+
+
+/*w rejestracji imputy są wzięte z logowania*/
+
+.radioRejestracja {
+    
+    line-height:20px;
+    margin-left: 175px;
+}
+
+
+
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+
+/*###########################
+THAIS
+#######################*/
+
+.thais {
+    height:879px;
+    width:1199px;
+    background: url('images/thaismap.png');
+    background-repeat:no-repeat;
+
+
+}
+.trainer{
+    position:absolute;
+    margin-top:600px;
+    margin-left:100px;
+    width:100px;
+    height:100px;
+}
+
+.trainerRoom {
+    height: 879px;
+    width: 1199px;
+    background: url('images/trainerRoom.png');
+    background-repeat: no-repeat;
+
+}
+
+.trainerInTrainerRoom {
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 340px;
+    width: 140px;
+    height: 140px;
+}
+
+.progressTrainer{
+    position:absolute;
+    margin-top:370px;
+    margin-left:380px;
+
+}
+
+.atakujButton{
+    font-size:30px;
+    background-color:green;
+    color:white;
+    margin-top:500px;
+    margin-left:400px;
+}
+
+.eqShopThais {
+    position: absolute;
+    margin-top: 540px;
+    margin-left: 430px;
+    width: 70px;
+    height: 70px;
+}
+
+.EqShopThaisInside {
+    height: 879px;
+    width: 1199px;
+    background: url('images/EqShopThais.png');
+    background-repeat: no-repeat;
+}
+
+.upgButton {
+    font-size: 30px;
+    background-color: green;
+    color: white;
+    display:block;
+    width:250px;
+}
+
+.ManaShopThaisInside {
+    height: 879px;
+    width: 1199px;
+    background: url('images/thaisMAGIC.png');
+    background-repeat: no-repeat;
+}
+
+.ManaShopThais {
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 540px;
+    width: 70px;
+    height: 70px;
+}
+
+.upgButton2 {
+    font-size: 30px;
+    background-color: green;
+    color: white;
+    display: block;
+    width: 300px;
+}
+
+.GoToCyclops {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 800px;
+    width: 100px;
+    height: 100px;
+}
+
+.CyclopsInside {
+    height: 879px;
+    width: 1199px;
+    background: url('images/ExpBattleground.png');
+    background-repeat: no-repeat;
+}
+
+.Cyclop{
+    width:150px;
+    height:150px;
+    margin-top:95px;
+    margin-left:405px;
+    position:absolute;
+}
+
+.expButton{
+
+    width:150px;
+    height:50px;
+    margin-top:700px;
+    margin-left:130px;
+    background-color:blueviolet;
+    color:white;
+
+}
+
+.CyclopsHpBar{
+    position:absolute;
+    margin-top:70px;
+    margin-left:440px;
+}
+
+.PlayerHpBar{
+    position:absolute;
+    margin-top:355px;
+    margin-left:540px;
+}
+
+.GoldLabel{
+    font-size:12pt;
+    color:gold;
+}
+
+
+
+
+
+.myButton {
+    -moz-box-shadow: inset 0px 0px 0px 0px #9acc85;
+    -webkit-box-shadow: inset 0px 0px 0px 0px #9acc85;
+    box-shadow: inset 0px 0px 0px 0px #9acc85;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
+    background: -moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+    background: -webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+    background: -o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+    background: linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a', endColorstr='#68a54b',GradientType=0);
+    background-color: #74ad5a;
+    border: 6px solid #3b6e22;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 8px 55px;
+    text-decoration: none;
+}
+
+    .myButton:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b), color-stop(1, #74ad5a));
+        background: -moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+        background: -webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+        background: -o-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+        background: linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#74ad5a',GradientType=0);
+        background-color: #68a54b;
+    }
+
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+
+    .xD{
+        border:3px solid;
+    }

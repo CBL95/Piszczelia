@@ -1,0 +1,403 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Assembly="EO.Web" Namespace="EO.Web" TagPrefix="eo" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+
+    
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jqueryui.css" rel="stylesheet" type="text/css" />
+    <script type="text/jscript" src="http://ajax.googleapis.com/ajax/libs/jquery1.5/jquery  .min.js"></script>
+    <script type="text/jscript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="kontener">
+
+            <div class="kolumna">
+                <div>
+                    <asp:Button ID="Button3" runat="server" Text="PISZCZELIA" CssClass="myButton" OnClick="RedirectToThais" />
+                    <span class="napis">Zalogowano jako:&nbsp;<asp:Label ID="ZalogowanyLabel" runat="server" Text="Label"></asp:Label></span>
+                    <br />
+                    <span class="napis">Postać:&nbsp;<asp:Label ID="PostacLabel" runat="server" Text="Label"></asp:Label></span>
+                    <br />
+
+
+
+
+                    <asp:Button ID="Button1" runat="server" Text="Button" CssClass="button" OnClick="Button1_Click"  /><br />
+                    <asp:Button ID="Button2" runat="server" Text="dodaj lvl" CssClass="button"/><br />
+                    <asp:Button ID="WylogujButton" runat="server" Text="Wyloguj" CssClass="button" OnClick="WylogujButton_Click" /><br />
+                    <br />
+
+
+
+
+                <div class="napis">Klasa postaci:</div>
+            <%--  CURRENT PROFFESION--%>
+            <asp:DataList ID="DataList10" runat="server" DataKeyField="profession_id" DataSourceID="SqlDataSource11">
+                 <ItemTemplate>
+                   <asp:Image runat="server" ImageUrl='<%# "~/images/profesja" + Eval("profession_id") + ".png" %>' />
+                    <br />
+                </ItemTemplate>
+            </asp:DataList>
+            <asp:SqlDataSource ID="SqlDataSource11" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="select profession_id from character WHERE id= @id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="id" SessionField="postac_id" />
+                           </SelectParameters>   
+                
+             </asp:SqlDataSource>
+            
+                   
+                </div>
+                
+                <div class="character">
+                    </div>
+             </div>
+                      
+            <div class="kontent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            
+            <div class="eq">
+                <div class="rzadEq1">
+                    <%--CURRENT AMULET--%>
+                    <asp:DataList ID="DataList16" runat="server" DataKeyField="image" DataSourceID="SqlDataSource17">
+                         <ItemTemplate> 
+                           <asp:Image runat="server" ImageUrl='<%# "~/images/items/" + Eval("image") %>' />
+                        </ItemTemplate>
+                    </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource17" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                         SelectCommand="SELECT i.image FROM character c INNER JOIN item i ON i.id = c.eq_amulet WHERE c.id = @character_id ">
+
+                                   <SelectParameters>
+                                       <asp:SessionParameter Name="character_id" SessionField="postac_id" />
+                                   </SelectParameters>   
+                
+                     </asp:SqlDataSource>
+
+                    <%--CURRENT WEAPON--%>
+                    <asp:DataList ID="DataList17" runat="server" DataKeyField="image" DataSourceID="SqlDataSource18">
+                         <ItemTemplate> 
+                           <asp:Image runat="server" ImageUrl='<%# "~/images/items/" + Eval("image") %>' />
+                        </ItemTemplate>
+                    </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource18" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                         SelectCommand="SELECT i.image FROM character c INNER JOIN item i ON i.id = c.eq_weapon WHERE c.id = @character_id ">
+
+                                   <SelectParameters>
+                                       <asp:SessionParameter Name="character_id" SessionField="postac_id" />
+                                   </SelectParameters>   
+                
+                     </asp:SqlDataSource>
+
+                    <%--CURRENT RING--%>
+                    <asp:DataList ID="DataList18" runat="server" DataKeyField="image" DataSourceID="SqlDataSource19">
+                         <ItemTemplate> 
+                           <asp:Image runat="server" ImageUrl='<%# "~/images/items/" + Eval("image") %>' />
+                        </ItemTemplate>
+                    </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource19" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                         SelectCommand="SELECT i.image FROM character c INNER JOIN item i ON i.id = c.eq_ring WHERE c.id = @character_id ">
+
+                                   <SelectParameters>
+                                       <asp:SessionParameter Name="character_id" SessionField="postac_id" />
+                                   </SelectParameters>   
+                
+                     </asp:SqlDataSource>                 
+                </div>
+                
+                <div class="rzadEq2">            
+                    <%--CURRENT HELMET--%>
+                    <asp:DataList ID="DataList11" runat="server" DataKeyField="image" DataSourceID="SqlDataSource12">
+                     <ItemTemplate> 
+                       <asp:Image runat="server" ImageUrl='<%# "~/images/items/" + Eval("image") %>' />
+                    </ItemTemplate>
+                </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource12" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                     SelectCommand="SELECT i.image FROM character c INNER JOIN item i ON i.id = c.eq_helmet WHERE c.id = @character_id ">
+
+                               <SelectParameters>
+                                   <asp:SessionParameter Name="character_id" SessionField="postac_id" />
+                               </SelectParameters>   
+                
+                 </asp:SqlDataSource>          
+    
+                    <%--CURRENT ARMOR--%>
+                    <asp:DataList ID="DataList12" runat="server" DataKeyField="image" DataSourceID="SqlDataSource13">
+                 <ItemTemplate> 
+                   <asp:Image runat="server" ImageUrl='<%# "~/images/items/" + Eval("image") %>' />
+                </ItemTemplate>
+            </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource13" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="SELECT i.image FROM character c INNER JOIN item i ON i.id = c.eq_armor WHERE c.id = @character_id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="character_id" SessionField="postac_id" />
+                           </SelectParameters>   
+                
+             </asp:SqlDataSource>
+            
+                    <%--CURRENT LEGS--%>
+                    <asp:DataList ID="DataList13" runat="server" DataKeyField="image" DataSourceID="SqlDataSource14">
+                 <ItemTemplate> 
+                   <asp:Image runat="server" ImageUrl='<%# "~/images/items/" + Eval("image") %>' />
+                </ItemTemplate>
+            </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource14" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="SELECT i.image FROM character c INNER JOIN item i ON i.id = c.eq_legs WHERE c.id = @character_id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="character_id" SessionField="postac_id" />
+                           </SelectParameters>   
+                
+             </asp:SqlDataSource>
+
+                   <%-- CURRENT BOOTS--%>
+                    <asp:DataList ID="DataList14" runat="server" DataKeyField="image" DataSourceID="SqlDataSource15">
+                 <ItemTemplate> 
+                   <asp:Image runat="server" ImageUrl='<%# "~/images/items/" + Eval("image") %>' />
+                </ItemTemplate>
+            </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource15" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="SELECT i.image FROM character c INNER JOIN item i ON i.id = c.eq_boots WHERE c.id = @character_id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="character_id" SessionField="postac_id" />
+                           </SelectParameters>   
+                
+             </asp:SqlDataSource>
+
+                </div>
+
+                <div class="rzadEq3">
+
+                    <%-- NIEZMIENNE POLE PLECAKA--%>
+                    <asp:Image ID="Image3" runat="server" src="images/items/backpack.gif" CssClass="eq_image"/> 
+
+                    <%-- CURRENT SHIELD--%>
+                    <asp:DataList ID="DataList15" runat="server" DataKeyField="image" DataSourceID="SqlDataSource16">
+                 <ItemTemplate> 
+                   <asp:Image runat="server" ImageUrl='<%# "~/images/items/" + Eval("image") %>' />
+                </ItemTemplate>
+            </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource16" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="SELECT i.image FROM character c INNER JOIN item i ON i.id = c.eq_shield WHERE c.id = @character_id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="character_id" SessionField="postac_id" />
+                           </SelectParameters>   
+                
+             </asp:SqlDataSource>
+
+                    <%-- NIEZMIENNE POLE AMUNICJI--%>
+                    <asp:Image ID="Image10" runat="server" src="images/items/frozen_starlight.gif" CssClass="eq_image"/> 
+
+                </div>
+            </div>
+
+            <div class="skills">
+
+              <%--  CURRENT LEVEL--%>
+              <asp:DataList ID="DataList5" runat="server" DataKeyField="level" DataSourceID="SqlDataSource6">
+                 <ItemTemplate>
+                    <class=napis>level:</class>
+                    <asp:Label CssClass="napis" ID="Label1" runat="server" Text='<%# Eval("level") %>'></asp:Label>
+                    <eo:ProgressBar ID="ProgressBar5" runat="server" Width="150px" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" ClientIDMode="AutoID" ControlSkinID="None" Height="3px" IndicatorColor="192, 0, 0" Value="0"></eo:ProgressBar>
+
+                </ItemTemplate>
+            </asp:DataList>
+              
+              <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="select level from character WHERE id= @id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="id" SessionField="postac_id" />
+                           </SelectParameters>       
+             </asp:SqlDataSource>
+
+
+              <%--CURRENT MAGIC LEVEL--%>
+              <asp:DataList ID="DataList6" runat="server" DataKeyField="ab_magical_level" DataSourceID="SqlDataSource7">
+                 <ItemTemplate>
+                    <class=napis>magic level:</class>
+                    <asp:Label CssClass="napis" ID="Label2" runat="server" Text='<%# Eval("ab_magical_level") %>'></asp:Label>
+                     <eo:ProgressBar ID="ProgressBar4" runat="server" Width="150px" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" ClientIDMode="AutoID" ControlSkinID="None" Height="3px" IndicatorColor="0, 192, 0" Value="30"></eo:ProgressBar>
+
+                </ItemTemplate>
+            </asp:DataList>
+              <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="select ab_magical_level from character WHERE id= @id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="id" SessionField="postac_id" />
+                           </SelectParameters>       
+             </asp:SqlDataSource>
+
+              
+              <%--CURRENT SWORD FIGHTING--%>
+              <asp:DataList ID="DataList7" runat="server" DataKeyField="ab_swordsmanship" DataSourceID="SqlDataSource8">
+                 <ItemTemplate>
+                    <class=napis>Sword fighting:</class>
+                    <asp:Label CssClass="napis" ID="Label2" runat="server" Text='<%# Eval("ab_swordsmanship") %>'></asp:Label>
+                     <eo:ProgressBar ID="ProgressBar4" runat="server" Width="150px" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" ClientIDMode="AutoID" ControlSkinID="None" Height="3px" IndicatorColor="0, 192, 0" Value="30"></eo:ProgressBar>
+
+                </ItemTemplate>
+            </asp:DataList>
+              <asp:SqlDataSource ID="SqlDataSource8" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="select ab_swordsmanship from character WHERE id= @id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="id" SessionField="postac_id" />
+                           </SelectParameters>       
+             </asp:SqlDataSource>
+
+
+              <%--CURRENT DISTANCE FIGHTING--%>
+              <asp:DataList ID="DataList8" runat="server" DataKeyField="ab_distancefighting" DataSourceID="SqlDataSource9">
+                 <ItemTemplate>
+                    <class=napis>Distance fighting:</class>
+                    <asp:Label CssClass="napis" ID="Label2" runat="server" Text='<%# Eval("ab_distancefighting") %>'></asp:Label>
+                     <eo:ProgressBar ID="ProgressBar4" runat="server" Width="150px" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" ClientIDMode="AutoID" ControlSkinID="None" Height="3px" IndicatorColor="0, 192, 0" Value="30"></eo:ProgressBar>
+
+                </ItemTemplate>
+            </asp:DataList>
+              <asp:SqlDataSource ID="SqlDataSource9" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="select ab_distancefighting from character WHERE id= @id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="id" SessionField="postac_id" />
+                           </SelectParameters>       
+             </asp:SqlDataSource>
+
+              <%--CURRENT SHIELDING--%>
+              <asp:DataList ID="DataList9" runat="server" DataKeyField="ab_shielding" DataSourceID="SqlDataSource10">
+                 <ItemTemplate>
+                    <class=napis>Shielding:</class>
+                    <asp:Label CssClass="napis" ID="Label2" runat="server" Text='<%# Eval("ab_shielding") %>'></asp:Label>
+                     <eo:ProgressBar ID="ProgressBar4" runat="server" Width="150px" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" ClientIDMode="AutoID" ControlSkinID="None" Height="3px" IndicatorColor="0, 192, 0" Value="30"></eo:ProgressBar>
+
+                </ItemTemplate>
+            </asp:DataList>
+              <asp:SqlDataSource ID="SqlDataSource10" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="select ab_shielding from character WHERE id= @id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="id" SessionField="postac_id" />
+                           </SelectParameters>       
+             </asp:SqlDataSource>
+             
+                <br />
+                <br />
+                <br />
+
+            <%--CURRENT GOLD--%>
+            <asp:DataList ID="DataList1" runat="server" DataKeyField="gold_amount" DataSourceID="SqlDataSource2">
+                 <ItemTemplate>
+                    <class=napis>Gold:</class>
+                    <asp:Label CssClass="GoldLabel" ID="Label12" runat="server" Text='<%# Eval("gold_amount") %>'></asp:Label>
+                    <br />
+                </ItemTemplate>
+            </asp:DataList>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="select gold_amount from character WHERE id= @id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="id" SessionField="postac_id" />
+                           </SelectParameters>   
+                
+             </asp:SqlDataSource>
+              
+
+            <%--CURRENT MANA POTION--%>
+            <asp:DataList ID="DataList2" runat="server" DataKeyField="pot_mana" DataSourceID="SqlDataSource3">
+                 <ItemTemplate>
+                    <class=napis>Mana potions:</class>
+                    <asp:Label CssClass="GoldLabel" ID="Label13" runat="server" Text='<%# Eval("pot_mana") %>'></asp:Label>
+                    <br />
+                </ItemTemplate>
+            </asp:DataList>
+            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="select pot_mana from character WHERE id= @id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="id" SessionField="postac_id" />
+                           </SelectParameters>   
+                
+             </asp:SqlDataSource>
+
+
+            <%--CURRENT HP POTION--%>
+            <asp:DataList ID="DataList3" runat="server" DataKeyField="pot_hp" DataSourceID="SqlDataSource4">
+                 <ItemTemplate>
+                    <class=napis>Health potions:</class>
+                    <asp:Label CssClass="GoldLabel" ID="Label14" runat="server" Text='<%# Eval("pot_hp") %>'></asp:Label>
+                    <br />
+                </ItemTemplate>
+            </asp:DataList>
+            <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="select pot_hp from character WHERE id= @id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="id" SessionField="postac_id" />
+                           </SelectParameters>   
+                
+             </asp:SqlDataSource>
+            
+            <%--CURRENT MAGIC RUNES--%>
+            <asp:DataList ID="DataList4" runat="server" DataKeyField="rune" DataSourceID="SqlDataSource5">
+                 <ItemTemplate>
+                    <class=napis>Magic runes:</class>
+                    <asp:Label CssClass="GoldLabel" ID="Label15" runat="server" Text='<%# Eval("rune") %>'></asp:Label>
+                    <br />
+                </ItemTemplate>
+            </asp:DataList>
+            <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>"
+                 SelectCommand="select rune from character WHERE id= @id ">
+
+                           <SelectParameters>
+                               <asp:SessionParameter Name="id" SessionField="postac_id" />
+                           </SelectParameters>   
+                
+             </asp:SqlDataSource>
+
+            </div>
+
+            <div id="clear">
+            </div>
+
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" UpdateCommand="UPDATE character SET gold_amount = 3000 WHERE id = @id" ConnectionString="<%$ ConnectionStrings:piszczelConnectionString1 %>" SelectCommand="SELECT * FROM [Character]">
+                <UpdateParameters>
+                    <asp:SessionParameter Name="id" SessionField="postac_id" />
+                </UpdateParameters>
+            </asp:SqlDataSource>
+
+            <div id="czat">
+                czat<br />
+                czat<br />
+                czat<br />
+                czat<br />
+            </div>
+        </div>
+          
+    </form>
+</body>
+</html>

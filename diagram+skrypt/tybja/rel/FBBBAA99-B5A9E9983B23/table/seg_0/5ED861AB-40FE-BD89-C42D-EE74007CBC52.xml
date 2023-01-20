@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5ED861AB-40FE-BD89-C42D-EE74007CBC52" name="konto">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:18:41 UTC</createdTime>
+<comment>komentarz</comment>
+<commentInRDBMS>komentarz</commentInRDBMS>
+<ownerDesignName>tybja</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C3CE363D-ADC0-7AB3-E807-61DEE77F1EA0">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:22:33 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="login" id="7A75156D-9078-B41B-CDE1-3CDA92BD6048">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:22:33 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="96AE245B-7612-FEAC-878B-4C03403DD0E0">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:22:33 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="E7AC520C-C9E4-9C88-AE53-956CD5518BDD">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:22:33 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_added" id="8559E3F3-A5F5-B55B-E4CB-820F81562579">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:22:33 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<defaultValue>GETDATE()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_active" id="05F62159-E2A9-6FD9-F7F0-F785A9742CA1">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:22:33 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<defaultValue>GETDATE()</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4AB5C72-C237-6C86-EC4E-672F3C685467" name="konto_PK">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:22:33 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3CE363D-ADC0-7AB3-E807-61DEE77F1EA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52801C71-07A6-ED60-C657-7BC48C3A6F51" name="konto_login_UN">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:23:22 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A75156D-9078-B41B-CDE1-3CDA92BD6048"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10923F74-7E40-E75E-F83E-A1DBC13B8A01" name="konto_email_UN">
+<createdBy>Grzesiu</createdBy>
+<createdTime>2018-03-25 16:23:22 UTC</createdTime>
+<ownerDesignName>tybja</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7AC520C-C9E4-9C88-AE53-956CD5518BDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

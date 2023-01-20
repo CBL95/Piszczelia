@@ -1,0 +1,78 @@
+CREATE TABLE konto (
+	id INT IDENTITY(1, 1) PRIMARY KEY,
+	login VARCHAR(30) NOT NULL UNIQUE,
+	password VARCHAR(100) NOT NULL,
+	email VARCHAR(100) NOT NULL UNIQUE,
+	date_added DATE DEFAULT GETDATE(),
+	last_active DATE
+);
+
+CREATE TABLE proffession (
+	id INT IDENTITY(1, 1) PRIMARY KEY,
+	name VARCHAR(30) NOT NULL UNIQUE
+);
+
+CREATE TABLE mob (
+	id INT IDENTITY(1, 1) PRIMARY KEY,
+	name VARCHAR(100) NOT NULL,
+	hp INT NOT NULL,
+	experience INT NOT NULL,
+	speed INT,
+	armor INT,
+	attack_mele INT NOT NULL,
+	attack_distance INT NOT NULL,
+	gold INT
+);
+	
+CREATE TABLE item (
+	id INT IDENTITY(1, 1) PRIMARY KEY,
+	type VARCHAR(20) NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	required_level INT NOT NULL,
+	required_proffession INT NOT NULL,
+	gold_value INT,
+	armor INT,
+	attack INT,
+	defence INT,
+	image VARCHAR(100)
+);
+
+CREATE TABLE character (
+	id INT IDENTITY(1, 1) PRIMARY KEY,
+	nickname VARCHAR(30) NOT NULL UNIQUE,
+	user_id INT NOT NULL UNIQUE FOREIGN KEY REFERENCES konto(id),
+	gold_amount INT default 0,
+	actual_hp INT default 150,
+	stamina INT default 100,
+	level INT default 0,
+	profession_id INT NOT NULL FOREIGN KEY REFERENCES proffession(id),
+	eq_helmet INT default 1,
+	eq_armor INT default 11,
+	eq_legs INT default 27,
+	eq_boots INT default 35,
+	eq_amulet INT default 38,
+	eq_ring INT,
+	eq_weapon INT default 42,
+	eq_shield INT default 71,
+	eq_ammunition INT,
+	eq_bag INT,
+	ab_magical_level INT default 1,
+	ab_swordsmanship INT default 10,
+	ab_distancefighting INT default 10,
+	ab_shielding INT default 10,
+	pot_mana INT default 5,
+	pot_hp INT default 5,
+	rune INT default 0
+);
+
+
+
+CREATE TABLE quest (
+	id INT IDENTITY(1, 1) PRIMARY KEY,
+	quest_title VARCHAR(100)
+);
+
+CREATE TABLE done_quests (
+	character_id INT NOT NULL FOREIGN KEY REFERENCES character(id),
+	quest_id INT NOT NULL FOREIGN KEY REFERENCES quest(id)
+);
